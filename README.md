@@ -24,14 +24,14 @@ The project uses Python libraries:
 - seaborn
 - scikit-learn
 
-You can install these using pip: 
-pip install pandas numpy matplotlib seaborn scikit-learn
+You can install these using pip:
 
+- pip install pandas numpy matplotlib seaborn scikit-learn
 
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/your-username/student-score-prediction.git
+git clone [https://github.com/your-username/student-score-prediction.git](https://github.com/your-username/student-score-prediction.git)
 cd student-score-prediction
 
 2. Download the dataset from Kaggle and place it in the project directory.
@@ -56,6 +56,6 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## Contact
 
-Abdelrahman Mostafa - abdomostafa20188@gmail.com
+Abdelrahman Mostafa - [abdomostafa20188@gmail.com](mailto:abdomostafa20188@gmail.com)
 
-Project Link: https://github.com/AbdooMatrix/Student-Score-Prediction
+Project Link: [https://github.com/AbdooMatrix/Student-Score-Prediction](https://github.com/AbdooMatrix/Student-Score-Prediction)
