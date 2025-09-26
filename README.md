@@ -1,63 +1,90 @@
-# Student Score Prediction
+# Student Score Prediction 🎓
 
-Predicting student exam scores based on study hours and other performance factors using regression models.
+Predict students’ exam scores based on multiple academic & behavioral factors using regression modeling.
 
-## Project Overview
+---
 
-This project uses the "Student Performance Factors" dataset from Kaggle to explore factors affecting student exam scores and build predictive models. It involves data cleaning, exploratory data analysis, feature engineering, training linear and polynomial regression models, and evaluation.
+## 📌 Overview
 
-### Dataset
+This project investigates relationships between student features (study time, attendance, parental involvement, tutoring sessions, etc.) and final exam outcomes. It involves:
 
-Source: [Student Performance Factors on Kaggle](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+- Data cleaning, missing value imputation, and preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Feature engineering (including hypothesis testing to select relevant features)  
+- Regression modeling (linear and polynomial degree 2)  
+- Model evaluation with cross-validation and metrics (R², RMSE, MAE)  
 
-Features include study hours, attendance, parental involvement, previous scores, sleep hours, extracurricular activities, and more.
+Some less impactful features, such as SleepHours and PhysicalActivity, were removed during feature selection.
 
-## Getting Started
+---
 
-### Dependencies
+## 🗂 Dataset
 
-The project uses Python libraries:
+The dataset is the **Student Performance Factors** dataset (Kaggle).  
+Key features include:
 
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
+- Study hours  
+- Attendance  
+- Parental involvement  
+- Previous exam/assignment scores  
+- Tutoring sessions  
+- Extracurricular activities  
+- Sleep hours (removed in feature engineering)  
+- And more  
 
-You can install these using pip:
+---
 
-- pip install pandas numpy matplotlib seaborn scikit-learn
+## 🛠 Installation & Setup
 
-### Installation
+### Requirements
 
-1. Clone the repository:
+- Python 
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn  
 
-   git clone [https://github.com/your-username/student-score-prediction.git](https://github.com/your-username/student-score-prediction.git)
+Install dependencies with:
 
-   cd student-score-prediction
+pip install pandas numpy matplotlib seaborn scikit-learn
 
-2. Download the dataset from Kaggle and place it in the project directory.
 
-3. Open and run the Jupyter notebook `Student_Score_Prediction.ipynb`.
+### Setup
 
-## Usage
+Clone this repo:
 
-- Run the notebook to load, clean, analyze, and model the data.
-- Visualizations provide insights into feature distributions and relationships.
-- Models predict final exam scores and evaluate performance.
+   git clone https://github.com/AbdooMatrix/Student-Score-Prediction.git
+   
+   cd Student-Score-Prediction
 
-## Results
 
-- Linear regression achieved a good fit with an R² around 0.86 on test data.
-- Polynomial regression (degree 2) was explored but offered limited improvement.
-- Feature selection and handling missing values were key to model accuracy.
+Download the dataset and place it in the project directory (e.g., `data/` folder).  
+Launch the notebook:
 
-## Contributing
+   jupyter notebook Student_Score_Prediction.ipynb
 
-Contributions are welcome! Please open issues or submit pull requests for improvements.
 
-## Contact
+---
 
-Abdelrahman Mostafa - [abdomostafa20188@gmail.com](mailto:abdomostafa20188@gmail.com)
+## 🚀 Usage Workflow
 
-Project Link: [https://github.com/AbdooMatrix/Student-Score-Prediction](https://github.com/AbdooMatrix/Student-Score-Prediction)
+- Load the data, fill missing values with the most common category, and remove any duplicate rows.  
+- Check the data by drawing charts and looking at numbers to understand which features affect the exam scores.  
+- Use statistical tests to find which features matter most. Features like Gender and School Type did not affect scores, so they were removed.  
+- Prepare the data by converting categories into numbers that models can understand.  
+- Train two types of regression models: simple Linear Regression and Polynomial Regression (degree 2).  
+- Measure how well the models work using R², RMSE, and MAE on test data. Use cross-validation to ensure models perform reliably on different data samples.  
+- Look at which features have the biggest influence on the exam score predictions.
+
+---
+
+## 📊 Results & Insights
+
+- Study hours and attendance are the strongest factors related to better exam results.  
+- Outliers in key numeric features and exam scores were limited using a method called IQR to make models more stable.  
+- Statistical tests found no meaningful effect of Gender and School Type on exam performance, so they were left out to keep the model simple.  
+- Linear Regression gave a good R² of about 0.86, showing it predicts exam scores well.  
+- Polynomial Regression had similar results with R² around 0.85, suggesting relationships are mostly linear.  
+- Models were tested multiple times with cross-validation to confirm consistent performance.  
+- Future steps could include using methods that reduce overfitting (like Ridge/Lasso), trying interactions between features, or testing more complex models such as Random Forests or Gradient Boosting.
