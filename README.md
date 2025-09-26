@@ -54,10 +54,6 @@ cd student-score-prediction
 
 Contributions are welcome! Please open issues or submit pull requests for improvements.
 
-## License
-
-Specify your license here, e.g., MIT License.
-
 ## Contact
 
 Abdelrahman Mostafa - abdomostafa20188@gmail.com
