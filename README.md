@@ -1,63 +1,103 @@
-# Student Score Prediction
+# Student Score Prediction 🎓
 
-Predicting student exam scores based on study hours and other performance factors using regression models.
+Predict students’ exam scores based on multiple academic & behavioral factors using regression modeling.
 
-## Project Overview
+---
 
-This project uses the "Student Performance Factors" dataset from Kaggle to explore factors affecting student exam scores and build predictive models. It involves data cleaning, exploratory data analysis, feature engineering, training linear and polynomial regression models, and evaluation.
+## 📌 Overview
 
-### Dataset
+This project investigates relationships between student features (study time, attendance, parental involvement, tutoring sessions, etc.) and final exam outcomes. It involves:
 
-Source: [Student Performance Factors on Kaggle](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+- Data cleaning, missing value imputation, and preprocessing  
+- Exploratory Data Analysis (EDA)  
+- Feature engineering (including hypothesis testing to select relevant features)  
+- Regression modeling (linear and polynomial degree 2)  
+- Model evaluation with cross-validation and metrics (R², RMSE, MAE)  
 
-Features include study hours, attendance, parental involvement, previous scores, sleep hours, extracurricular activities, and more.
+Some less impactful features, such as SleepHours and PhysicalActivity, were removed during feature selection.
 
-## Getting Started
+---
 
-### Dependencies
+## 🗂 Dataset
 
-The project uses Python libraries:
+The dataset is the **Student Performance Factors** dataset (Kaggle).  
+Key features include:
 
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
+- Study hours  
+- Attendance  
+- Parental involvement  
+- Previous exam/assignment scores  
+- Tutoring sessions  
+- Extracurricular activities  
+- Sleep hours (removed in feature engineering)  
+- And more  
 
-You can install these using pip:
+---
 
-- pip install pandas numpy matplotlib seaborn scikit-learn
+## 🛠 Installation & Setup
 
-### Installation
+### Requirements
 
-1. Clone the repository:
+- Python 3.7+  
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- scikit-learn  
 
-   git clone [https://github.com/your-username/student-score-prediction.git](https://github.com/your-username/student-score-prediction.git)
+Install dependencies with:
 
-   cd student-score-prediction
+pip install pandas numpy matplotlib seaborn scikit-learn
 
-2. Download the dataset from Kaggle and place it in the project directory.
 
-3. Open and run the Jupyter notebook `Student_Score_Prediction.ipynb`.
+### Setup
 
-## Usage
+Clone this repo:
 
-- Run the notebook to load, clean, analyze, and model the data.
-- Visualizations provide insights into feature distributions and relationships.
-- Models predict final exam scores and evaluate performance.
+   git clone https://github.com/AbdooMatrix/Student-Score-Prediction.git
+   
+   cd Student-Score-Prediction
 
-## Results
 
-- Linear regression achieved a good fit with an R² around 0.86 on test data.
-- Polynomial regression (degree 2) was explored but offered limited improvement.
-- Feature selection and handling missing values were key to model accuracy.
+Download the dataset and place it in the project directory (e.g., `data/` folder).  
+Launch the notebook:
 
-## Contributing
+   jupyter notebook Student_Score_Prediction.ipynb
 
-Contributions are welcome! Please open issues or submit pull requests for improvements.
 
-## Contact
+---
 
-Abdelrahman Mostafa - [abdomostafa20188@gmail.com](mailto:abdomostafa20188@gmail.com)
+## 🚀 Usage Workflow
 
-Project Link: [https://github.com/AbdooMatrix/Student-Score-Prediction](https://github.com/AbdooMatrix/Student-Score-Prediction)
+- Load & preprocess data (handle missing values by mode imputation, drop duplicates)  
+- Perform exploratory analysis (distributions, correlations, plots)  
+- Apply hypothesis testing for feature relevance and encode categorical features  
+- Train regression models (linear and polynomial degree 2)  
+- Evaluate models using R², RMSE, MAE on the test set and 5-fold cross-validation  
+- Analyze which factors most influence predictions  
+
+---
+
+## 📊 Results & Findings
+
+- Linear regression test set R² ≈ 0.86 with good RMSE and MAE  
+- Polynomial regression (degree 2) test set R² ≈ 0.855, slightly worse than linear  
+- Feature selection and outlier handling improved model accuracy  
+- Cross-validation indicates stable model performance  
+
+---
+
+## 🤝 Contributing
+
+Contributions & suggestions are welcome! Feel free to:  
+- Open an issue  
+- Submit a pull request  
+- Suggest enhancements (e.g., new models, deployment pipelines)  
+
+---
+
+## 📬 Contact
+
+Abdelrahman Mostafa  
+Email: [abdomostafa20188@gmail.com](mailto:abdomostafa20188@gmail.com)  
+GitHub: [AbdooMatrix/Student-Score-Prediction](https://github.com/AbdooMatrix/Student-Score-Prediction)
