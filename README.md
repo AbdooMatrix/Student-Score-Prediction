@@ -31,8 +31,10 @@ You can install these using pip:
 ### Installation
 
 1. Clone the repository:
-git clone [https://github.com/your-username/student-score-prediction.git](https://github.com/your-username/student-score-prediction.git)
-cd student-score-prediction
+
+   git clone [https://github.com/your-username/student-score-prediction.git](https://github.com/your-username/student-score-prediction.git)
+
+   cd student-score-prediction
 
 2. Download the dataset from Kaggle and place it in the project directory.
 
