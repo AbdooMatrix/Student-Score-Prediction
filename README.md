@@ -38,7 +38,7 @@ Key features include:
 
 ### Requirements
 
-- Python 
+- Python
 - pandas  
 - numpy  
 - matplotlib  
@@ -49,7 +49,6 @@ Install dependencies with:
 
 pip install pandas numpy matplotlib seaborn scikit-learn
 
-
 ### Setup
 
 Clone this repo:
@@ -59,12 +58,10 @@ Clone this repo:
    cd student-score-prediction
    ```
 
-
 Download the dataset and place it in the project directory (e.g., `data/` folder).  
 Launch the notebook:
 
    jupyter notebook Student_Score_Prediction.ipynb
-
 
 ---
 
