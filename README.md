@@ -23,11 +23,9 @@ The main goals are:
 ---
 
 ## 📂 Dataset
-
 The dataset comes from [Kaggle: Student Performance Factors](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors).  
 
 **Features include:**
-
 - Study hours  
 - Attendance  
 - Parental involvement  
@@ -82,7 +80,6 @@ The dataset comes from [Kaggle: Student Performance Factors](https://www.kaggle.
 ## ▶️ How to Run the Project
 
 ### 1. Clone the Repository
-
 ```bash
 git clone https://github.com/AbdooMatrix/Student-Score-Prediction.git
 cd student-score-prediction
@@ -122,11 +119,11 @@ python main.py
 
 This will:
 
-Load & preprocess the dataset
-Perform EDA
-Train Linear & Polynomial Regression models
-Print evaluation metrics
-Show visualizations (distributions, heatmaps, predicted vs actual scores)
+* Load & preprocess the dataset
+* Perform EDA
+* Train Linear & Polynomial Regression models
+* Print evaluation metrics
+* Show visualizations (distributions, heatmaps, predicted vs actual scores)
 
 ### 5. (Optional) Run Jupyter Notebook
 
