@@ -54,9 +54,10 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 Clone this repo:
 
+   ```bash
    git clone https://github.com/AbdooMatrix/Student-Score-Prediction.git
-   
-   cd Student-Score-Prediction
+   cd student-score-prediction
+   ```
 
 
 Download the dataset and place it in the project directory (e.g., `data/` folder).  
